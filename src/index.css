@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: Fredoka;
+  src: url("./assets//fonts/Fredoka-Medium.ttf");
+}
+
+@layer utilities {
+  .m-container {
+    @apply w-2/3 justify-center items-center mx-auto ;
+  }
+}
+
+body {
+  font-family: Fredoka;
+}
