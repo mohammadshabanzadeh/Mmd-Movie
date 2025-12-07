@@ -8,7 +8,7 @@
 
 @layer utilities {
   .m-container {
-    @apply w-2/3 justify-center items-center mx-auto ;
+    @apply w-full md:w-3/4 justify-center items-center mx-auto;
   }
 }
 

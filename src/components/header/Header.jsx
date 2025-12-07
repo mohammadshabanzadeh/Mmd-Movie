@@ -9,7 +9,7 @@ function Header() {
   const [bg , setBg] = useState(bg1)
 
   return (
-    <header  className="py-12 bg-cover bg-center" style={{backgroundImage:`linear-gradient(to bottom,#00000061, #000000e3), url('${bg}') `}}>
+    <header  className="md:py-12 bg-cover bg-center" style={{backgroundImage:`linear-gradient(to bottom,#00000061, #000000e3), url('${bg}') `}}>
       <div className="m-container ">
         <Navigation />
         <SearchBox />

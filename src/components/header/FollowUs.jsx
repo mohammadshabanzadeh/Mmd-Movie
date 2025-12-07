@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 function FollowUs() {
   return (
     <section >
-      <div className="flex justify-end items-center mt-4 text-slate-300">
+      <div className="flex justify-center md:justify-end items-center mt-4 text-slate-300">
         <span className="mr-4">FOLLOW US</span>
         <ul className="flex gap-4">
           <li>
