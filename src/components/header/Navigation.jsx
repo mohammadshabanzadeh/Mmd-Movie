@@ -53,7 +53,7 @@ function Navigation() {
           </button>
         </div>
       </nav>
-      <div className={`md:hidden backdrop-blur-2xl transition-all duration-200 w-2/3 mx-auto mr-10 rounded-tr-none rounded-2xl ${isOpenMenu ? "h-58 p-4 scale-100" : "scale-0 overflow-hidden h-0" }`}> 
+      <div className={` md:hidden backdrop-blur-2xl transition-all duration-200 w-2/3 mx-auto absolute right-10 z-10 rounded-tr-none rounded-2xl ${isOpenMenu ? "h-58 p-4 scale-100 " : "scale-0 overflow-hidden h-0 " }`}> 
         <ul className="flex flex-col justify-center items-center gap-4 ">
           <li>
             <a href="">MOVIES</a>
