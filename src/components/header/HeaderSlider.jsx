@@ -61,7 +61,7 @@ function HeaderSlider({setBg}) {
             
               src={image.img}
               alt="error"
-              className=" rounded-lg cursor-pointer hover:scale-105 transition-all "
+              className=" rounded-lg cursor-pointer hover:scale-105 transition-all  px-15 py-5 md:px-0 md:py0"
             />
           </SwiperSlide>
         ))}
