@@ -6,28 +6,28 @@ function Navigation() {
 
   return (
     <>
-      <nav className="flex  md:rounded-full p-3 px-5  backdrop-blur-2xl lg:px-10 items-center text-slate-300">
-        <div className="flex items-center ">
+      <nav className="flex  md:rounded-b-4xl p-3 px-5 bg-black/70 lg:px-10 items-center text-slate-300">
+        <div className="flex items-baseline ">
           <h1 className="text-2xl mr-4 lg:mr-12 ">
             Mmd<span className="text-red-500">Movies</span>
             <p className="text-xs text-center text-slate-500 font-thin">
-              Film Review
+              <a href="/">Film Review</a>
             </p>
           </h1>
           <ul className="hidden md:flex  text-sm lg:text-base gap-2 lg:gap-4 uppercase">
-            <li>
-              <a href="#" />
+            <li className="cursor-pointer hover:text-white transition-all">
+              <a href="/" />
               Movies
             </li>
-            <li>
+            <li className="cursor-pointer hover:text-white transition-all">
               <a href="#" />
               Tv Shows
             </li>
-            <li>
+            <li className="cursor-pointer hover:text-white transition-all">
               <a href="#" />
               People
             </li>
-            <li>
+            <li className="cursor-pointer hover:text-white transition-all">
               <a href="#" />
               More
             </li>
@@ -35,7 +35,7 @@ function Navigation() {
         </div>
 
         <div className="hidden md:block ml-auto">
-          <ul className="flex gap-4 items-center uppercase ">
+          <ul className="flex gap-4 items-baseline uppercase ">
             <li className="cursor-pointer">
               <a href="#" />
               Login
@@ -53,7 +53,11 @@ function Navigation() {
           </button>
         </div>
       </nav>
-      <div className={` md:hidden backdrop-blur-2xl transition-all duration-200 w-2/3 mx-auto absolute right-10 z-10 rounded-tr-none rounded-2xl ${isOpenMenu ? "h-58 p-4 scale-100 " : "scale-0 overflow-hidden h-0 " }`}> 
+      <div
+        className={` md:hidden backdrop-blur-2xl transition-all duration-200 w-full mx-auto absolute right-0 z-10 rounded-t-none rounded-4xl ${
+          isOpenMenu ? "h-58 p-4  " : " overflow-hidden h-0 "
+        }`}
+      >
         <ul className="flex flex-col justify-center items-center gap-4 ">
           <li>
             <a href="">MOVIES</a>
@@ -69,8 +73,12 @@ function Navigation() {
           </li>
         </ul>
         <div className="mt-4 pt-3 border-t-1 border-white/50 w-3/4 flex justify-center items-center gap-4 mx-auto ">
-          <a href="" className="text-lg">LOGIN</a>
-          <a href="" className="bg-red-600 py-1 px-3 rounded-full ">SIGN UP</a>
+          <a href="" className="text-lg">
+            LOGIN
+          </a>
+          <a href="" className="bg-red-600 py-1 px-3 rounded-full ">
+            SIGN UP
+          </a>
         </div>
       </div>
     </>

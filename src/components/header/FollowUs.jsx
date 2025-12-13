@@ -12,22 +12,22 @@ function FollowUs() {
         <ul className="flex gap-4">
           <li>
             <a href="#">
-              <FaInstagram className="hover:text-red-400"/>
+              <FaInstagram className="hover:text-red-400 transition-all"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <FaYoutube className="hover:text-red-400"/>
+              <FaYoutube className="hover:text-red-400 transition-all"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <FaFacebook className="hover:text-red-400"/>
+              <FaFacebook className="hover:text-red-400 transition-all"/>
             </a>
           </li>
           <li>
             <a href="#">
-              <FaTwitter className="hover:text-red-400"/>
+              <FaTwitter className="hover:text-red-400 transition-all"/>
             </a>
           </li>
         </ul>
