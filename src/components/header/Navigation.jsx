@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import Home from "./Home";
 
 function Navigation() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -8,24 +10,24 @@ function Navigation() {
     <>
       <nav className="flex  md:rounded-b-4xl p-3 px-5 bg-black/70 lg:px-10 items-center text-slate-300">
         <div className="flex items-baseline ">
-          <h1 className="text-2xl mr-4 lg:mr-12 ">
-            Mmd<span className="text-red-500">Movies</span>
-            <p className="text-xs text-center text-slate-500 font-thin">
-              <a href="/">Film Review</a>
-            </p>
-          </h1>
+          <Link to="/">
+            <h1 className="text-2xl mr-4 lg:mr-12 ">
+              Mmd<span className="text-red-500">Movies</span>
+              <p className="text-xs text-center text-slate-500 font-thin">
+                Film Review
+              </p>
+            </h1>
+          </Link>
           <ul className="hidden md:flex  text-sm lg:text-base gap-2 lg:gap-4 uppercase">
             <li className="cursor-pointer hover:text-white transition-all">
-              <a href="/" />
-              Movies
+              <Link to="/movies">Movies</Link>
             </li>
             <li className="cursor-pointer hover:text-white transition-all">
-              <a href="#" />
-              Tv Shows
+              <Link to="/tvShows">Tv Shows</Link>
             </li>
             <li className="cursor-pointer hover:text-white transition-all">
-              <a href="#" />
-              People
+              <Link to="/people">People</Link>
+              
             </li>
             <li className="cursor-pointer hover:text-white transition-all">
               <a href="#" />
@@ -60,16 +62,16 @@ function Navigation() {
       >
         <ul className="flex flex-col justify-center items-center gap-4 ">
           <li>
-            <a href="">MOVIES</a>
+            <Link to="/movies">MOVIES</Link>
           </li>
           <li>
-            <a href="">TV SHOES</a>
+            <Link to="/tvShows">TV SHOES</Link>
           </li>
           <li>
-            <a href="">PEOPLE</a>
+            <Link to="/people">PEOPLE</Link>
           </li>
           <li>
-            <a href="">MORE</a>
+            <Link to="/">MORE</Link>
           </li>
         </ul>
         <div className="mt-4 pt-3 border-t-1 border-white/50 w-3/4 flex justify-center items-center gap-4 mx-auto ">
